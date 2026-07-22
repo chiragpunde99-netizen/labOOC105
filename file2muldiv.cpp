@@ -1,8 +1,7 @@
 #include <iostream>
 
 namespace arithmetic2
-{  int multiply(int, int);
-    int divide(int, int);
+{
     int multiply(int a, int b)
     {
         return a * b;
