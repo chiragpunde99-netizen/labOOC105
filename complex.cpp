@@ -24,9 +24,9 @@ public:
 int main() {
     Complex c1(4, 5), c2(8, 9);
 
-    Complex sum = c1.add(c2);
+    Complex sum = c2.add(c2);
     Complex diff = c1.subtract(c2);
-
+ 
     cout << "First Complex Number: ";
     c1.display();
 
