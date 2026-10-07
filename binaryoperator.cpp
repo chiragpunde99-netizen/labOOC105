@@ -31,7 +31,7 @@ public:
 
         d3.feet = this->feet + d2.feet;
         d3.inch = this->inch + d2.inch;
-
+        cout<<"i am from operator"<<d2.feet<<endl;
         // Return the resulting object
         return d3;
     }
@@ -45,10 +45,10 @@ int main()
     Distance d3;
 
     // Use overloaded operator
-    d3 = d1 + d2;
+    d3 = d2 + d1;
 
     cout << "\nTotal Feet & Inches: "
-         << d3.feet << "'" << d3.inch;
+         << d3.feet << "'" << d3.inch << "\n";
 
     return 0;
 }

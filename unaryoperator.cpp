@@ -22,7 +22,15 @@ public:
         inch--;
 
         cout << "\nFeet & Inches(Decrement): "
-             << feet << "'" << inch;
+             << feet << "'" << inch << "\n";
+    }
+    void operator++()
+    {
+        feet++;
+        inch++;
+
+        cout << "\nFeet & Inches(Increment): "
+             << feet << "'" << inch << "\n";
     }
 };
 
@@ -33,6 +41,9 @@ int main()
 
     // Use (-) unary operator by single operand
     -d1;
+    ++d1;
+    cout << "\nFeet & Inches: "
+         << d1.feet << "'" << d1.inch << "\n";
 
     return 0;
 }
